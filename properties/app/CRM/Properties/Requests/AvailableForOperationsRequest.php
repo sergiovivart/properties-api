@@ -46,11 +46,8 @@ class AvailableForOperationsRequest extends FormRequest
      */
     protected function prepareForValidation()
     {
-        // Asegura que si zone_id viene, zone_type también debe venir
         if ($this->filled('zone_id') && !$this->filled('zone_type')) {
-            $this->merge([
-                'zone_type' => null
-            ]);
+            abort(422, 'El parámetro zone_type es obligatorio cuando se proporciona zone_id.');
         }
     }
 }
