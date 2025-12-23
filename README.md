@@ -32,14 +32,13 @@ Que devuelva propiedades disponibles para crear operaciones, cumpliendo:
 ## 🚀 Instalación
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sergiovivart/properties-api.git
 cd project
 composer install
 php artisan key:generate
 php artisan migrate:fresh --seed
 php artisan serve
-
----
+```
 
 ## 🔐 Autenticación (Sanctum)
 
