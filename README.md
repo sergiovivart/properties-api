@@ -58,3 +58,7 @@ Usar el token en Postman
 
 - Authorization: Bearer TU_TOKEN_AQUI
 - Accept: application/json
+
+## ℹ️ Notas
+
+Este proyecto está pensado para ejecutarse en entorno local con SQLite y datos de prueba generados mediante seeders.
