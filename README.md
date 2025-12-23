@@ -42,7 +42,11 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## 🔐 Autenticación : Generar token de acceso (entorno local)
+## 🔐 Generar token de acceso (entorno local) 
 
 - GET /GeneraTokenPersonal
-- Authorization: Bearer {TOKEN}
+
+## 🔐 Usar el token en Postman
+
+- Authorization: Bearer TU_TOKEN_AQUI
+- Accept: application/json
