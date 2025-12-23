@@ -44,9 +44,13 @@ php artisan serve
 
 ## 🔐 Generar token de acceso (entorno local) 
 
+La API está protegida mediante Bearer Token.
+
 - GET /GeneraTokenPersonal
 
-## 🔐 Usar el token en Postman
+Este endpoint genera un token personal para el primer usuario de la base de datos (creado por los seeders).
+
+Usar el token en Postman
 
 - Authorization: Bearer TU_TOKEN_AQUI
 - Accept: application/json
