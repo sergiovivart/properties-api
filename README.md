@@ -42,6 +42,10 @@ php artisan migrate --seed
 php artisan serve
 ```
 
+## 📡 Endpoint principal
+
+GET /api/properties/available-for-operations
+
 ## 🔐 Generar token de acceso (entorno local) 
 
 La API está protegida mediante Bearer Token.
