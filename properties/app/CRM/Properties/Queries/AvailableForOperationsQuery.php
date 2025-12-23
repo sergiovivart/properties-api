@@ -27,7 +27,8 @@ class AvailableForOperationsQuery
         $user = Auth::user();
 
         // Autorización por oficina según rol
-        if (! $user->hasAnyRole(['admin', 'god', 'commercial_director'])) {
+        $adminRoles = ['admin', 'god', 'commercial_director'];
+        if (!in_array($user->role, $adminRoles)) {
             $this->query->where('office_id', $user->office_id);
         } elseif (!empty($filters['office_id'])) {
             $this->query->where('office_id', $filters['office_id']);

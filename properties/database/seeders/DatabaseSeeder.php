@@ -20,6 +20,9 @@ class DatabaseSeeder extends Seeder
             LocationSeeder::class,
             PropertySeeder::class,
             OperationSeeder::class,
+
+            // Seeders para datos de prueba
+            TestPropertySeeder::class,
         ]);
     }
 }

@@ -22,7 +22,9 @@ Route::get('/ping', function() {
 
 
 // Endpoint de propiedades disponibles para operaciones
-Route::middleware('auth:sanctum')->get(
-    '/properties/available-for-operations',
-    [AvailablePropertiesController::class, 'index']
-);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get(
+        '/properties/available-for-operations',
+        [AvailablePropertiesController::class, 'index']
+    );
+});

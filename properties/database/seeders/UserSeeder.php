@@ -17,6 +17,7 @@ class UserSeeder extends Seeder
             'email' => 'juan@example.com',
             'password' => bcrypt('password'),
             'office_id' => $office->id,
+            'role'  => 'admin',
         ]);
 
         User::create([
@@ -24,6 +25,7 @@ class UserSeeder extends Seeder
             'email' => 'maria@example.com',
             'password' => bcrypt('password'),
             'office_id' => $office->id,
+            'role' => 'user',
         ]);
     }
 }
