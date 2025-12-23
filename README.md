@@ -36,12 +36,13 @@ git clone https://github.com/sergiovivart/properties-api.git
 cd properties-api
 cd properties
 composer install
+cp .env.example .env
 php artisan key:generate
-php artisan migrate:fresh --seed
+php artisan migrate --seed
 php artisan serve
 ```
 
-## 🔐 Autenticación (Sanctum)
+## 🔐 Autenticación : Generar token de acceso (entorno local)
 
 - GET /GeneraTokenPersonal
 - Authorization: Bearer {TOKEN}
