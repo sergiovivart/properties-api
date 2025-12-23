@@ -33,7 +33,7 @@ Que devuelva propiedades disponibles para crear operaciones, cumpliendo:
 
 ```bash
 git clone https://github.com/sergiovivart/properties-api.git
-cd project
+cd properties
 composer install
 php artisan key:generate
 php artisan migrate:fresh --seed
