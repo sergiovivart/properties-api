@@ -59,6 +59,17 @@ Usar el token en Postman
 - Authorization: Bearer TU_TOKEN_AQUI
 - Accept: application/json
 
+## 🔎 Filtros soportados (opcional)
+
+El endpoint admite filtros vía query params, por ejemplo:
+
+- ?page=1
+- ?per_page=20
+- ?office_id=
+- ?property_type=
+- ?min_price=
+- ?max_price=
+
 ## ℹ️ Notas
 
 Este proyecto está pensado para ejecutarse en entorno local con SQLite y datos de prueba generados mediante seeders.
